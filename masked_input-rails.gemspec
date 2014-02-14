@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "masked_input-rails"
   gem.require_paths = ["lib"]
-  gem.version       = MaskedInput::Rails::Version::STRING
+  gem.version       = MaskedInput::Rails::Version::STRING.dup
 
   gem.add_dependency "railties", "~> 4.0"
 end
